@@ -1,5 +1,6 @@
 package edu.icet.ecom.model.dto;
 
+import edu.icet.ecom.model.enums.status;
 import lombok.*;
 
 import java.time.LocalDate;
@@ -14,7 +15,7 @@ public class UserCompany {
     private String company;
     private String role;
     private LocalDate appliedDate;
-    private Enum status;
+    private Enum<status> status;
     private String contactEmail;
     private String  notes;
 }
