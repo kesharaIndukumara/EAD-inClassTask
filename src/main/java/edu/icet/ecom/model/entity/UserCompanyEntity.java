@@ -1,5 +1,6 @@
 package edu.icet.ecom.model.entity;
 
+import edu.icet.ecom.model.enums.status;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -21,7 +22,7 @@ public class UserCompanyEntity {
     private String company;
     private String role;
     private LocalDate appliedDate;
-    private Enum status;
+    private Enum<status> status;
     private String contactEmail;
     private String notes;
 }
